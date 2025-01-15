@@ -26,10 +26,10 @@ public class lesson_02 {
     int i4 = 0x0;
     System.out.println(i1 + " " + i2 + " " + i3 + " " + i4);
 
-    long l1 = 123456789;
-    long l2 = 0b0111_0101_1011_1100_1101_0001_0101;
-    long l3 = 0726_746_425;
-    long l4 = 0x75B_CD15;
+    long l1 = 123456789L;
+    long l2 = 0b0111_0101_1011_1100_1101_0001_0101L;
+    long l3 = 0726_746_425L;
+    long l4 = 0x75B_CD15L;
     System.out.println(l1 + " " + l2 + " " + l3 + " " + l4);
 
     System.out.println();
