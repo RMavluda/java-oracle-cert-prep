@@ -3,39 +3,63 @@ package org.example.Lesson03;
 public class Test5 {
 
   public static void main(String[] args) {
-    long a = 100L;
+    /*
+    * true^true^true=false
+    * false^false^false=false
+    * true^false^true=false
+    * false^false^true=true
+    */
+    boolean b1 = true;
+    boolean b2 = false;
+    boolean b3 = false;
+    boolean b4 = false;
 
-    // int b = a; Error
-    int b = 10;
+    System.out.println(b1^b2^b3^b4);
+/*
+    boolean x = true;
+    boolean y = false;
 
-    // short c = b; Error
+    System.out.println(!x);
+    System.out.println(!y);
 
-    short c = 7;
+    System.out.println();
 
-    a = b;
+    int a = 10;
+    int b = 50;
+    boolean z = a > b;
+    System.out.println(!z);
 
-    long d = c;
+    System.out.println();
 
-    float f1 = 3.14F;
-    double d1 = 1.23;
-    float f2 = a;
-    double d2 = a;
+    int c = 0;
+    int d = 100;
 
-    d1 = f1;
+    boolean b1 = a < b && c++ == d; // true && false = false
+    // AND operatorida: avval c va d ni solishtiradi, keyin c ning qiymatini 2 ga oshiradi. bu holatdanatijaga hech qanday tasir ko`rsatmaydi
+    System.out.println(b1);
+    //  b1 = a > b && c++ == d; --> qilganimizda avval a < b ni tekshiradi, javob false bo`lgani uchun 2-shartni tekshirmidi. chunki AND da bitta false kifoya, javob false bo`ladi.
+
+    System.out.println();
+
+    a = 60;
+    c = 99;
+    boolean b2 = a > b || ++c == d;
+    System.out.println(b2);
+    //OR operatorida: a > b tekshrilganda javob true, shu joyda to`htatiladi. chunki OR uchun 1 ta true bo`lsa kifoya, javob ham true
 
 
+    System.out.println("Bitwise &, bitwise | operations:");
+    boolean b3 = a<b & ++c==d;
+    System.out.println(b3);
+    System.out.println(c);
+    //agar har qanday holatda ham shartlarni barchasi tekshriilishi kerak bo`lsa, bitwise operatorlars dan foydalaniladi.
+    //masalan yuqoridagi shartda c ning qiymati 1 ga oshadi
 
-  /*int a = 3;
-  int b = 50;
-  int c = 0;
 
-  a = b = c = 18;
+    System.out.println();
+    int l = 10;
+    int k = 5;
+    System.out.println(l|k);*/
 
-
-  System.out.println(a);
-  System.out.println(b);
-  System.out.println(c);*/
   }
-
-
 }

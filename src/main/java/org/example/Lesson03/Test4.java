@@ -1,41 +1,31 @@
 package org.example.Lesson03;
 
 public class Test4 {
-
-  public static void main(String[] args) {
-
-/*
-Unary operations
-++ prefix
--- postfix
-*/
-    int x = 5;
-    int y = 3;
-    int z = x - ++y;
-    System.out.println("z = " + z);
-    System.out.println("y = " + y);
-    int a = 5;
-    int b = ++a - --a - a-- + a++;
-    System.out.println("b = " + b);
-    System.out.println("a = " + a);
-
-/*
-    double a = 5.5;
-    double b = 3.5;
-
-    double c = a % b;
-    System.out.println(c);
-*/
-
-/*
-    int a = 11;
+  public static void main(String[] args){
+    int a = 2;
     int b = 3;
+    int c = 5;
 
-    int wholePart = a / b;
-    int remainder = a % b;
+    boolean b1 = a > b;
+    System.out.println("a>b " + b1);
+    boolean b2 = b <= c;
+    System.out.println("b<=c " + b2);
+    boolean b3 = c == b;
+    System.out.println("c==b " + b3);
+    System.out.println(c=b);
+    boolean b4 = c != b;
+    System.out.println("c!=b " + b4);
 
-    System.out.println(wholePart);
-    System.out.println(remainder);
-*/
+    System.out.println("Short circuits");
+
+    boolean x = false;
+    boolean y = false;
+    boolean z = false;
+
+    boolean result1 = x&&y&&z;
+    boolean result2 = x||y||z;
+
+    System.out.println(result1);
+    System.out.println(result2);
   }
 }
