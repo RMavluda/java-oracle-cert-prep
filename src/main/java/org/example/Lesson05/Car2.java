@@ -6,15 +6,15 @@ public class Car2 {
   String engine;
   int speed;
 
-  void gas(int s){
+  void gas(int s) {
     speed += s;
   }
 
-  void brake(int b){
+  void brake(int b) {
     speed -= b;
   }
 
-  void showInfo(){
+  void showInfo() {
     System.out.println("Color: " + color);
     System.out.println("Engine: " + engine);
     System.out.println("Speed: " + speed);
@@ -22,8 +22,9 @@ public class Car2 {
 
 }
 
-class Car2Test{
-  public static void main(String[] args){
+class Car2Test {
+
+  public static void main(String[] args) {
     Car2 c1 = new Car2();
     c1.color = "White";
     c1.engine = "VG";
@@ -35,4 +36,4 @@ class Car2Test{
     c1.brake(80);
     c1.showInfo();
   }
-    }
+}

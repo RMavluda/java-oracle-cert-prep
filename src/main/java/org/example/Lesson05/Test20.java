@@ -6,13 +6,14 @@ public class Test20 {
     return a + b + c;
   }
 
-  int arithmeticMean(int a1, int b1, int c1){
+  int arithmeticMean(int a1, int b1, int c1) {
     return sum(a1, b1, c1) / 3;
   }
 }
 
-class Test21{
-  public static void main(String[] args){
+class Test21 {
+
+  public static void main(String[] args) {
     Test20 t = new Test20();
     int sumOfThreeNumbers = t.sum(1, 2, 3);
     System.out.println(sumOfThreeNumbers);
