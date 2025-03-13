@@ -3,9 +3,11 @@ package org.example.Lesson05;
 public class Car2 {
   void Car(){}
   /*
-  * javada har qanday classda default constructor mavjud bo`ladi
-  * qachonki biz constructor yaratmagunimizgacha
+  * Javada har qanday classda default constructor mavjud bo`ladi, qachonki biz constructor yaratmagunimizgacha
+  * Constructor da return type mavjud emas
+  * Constructor ni oldiga void yozish bilan uni metodga aylantirish mumkin
   * */
+
   String color;
   String engine;
   int speed;
