@@ -24,13 +24,13 @@ class StudentTest {
     s1.averageGradeInMath = 3.5;
     s1.averageGradeInEconomics = 5.5;
     s1.averageGradeInForeignLanguage = 6.0;
-    System.out.println(s1.studentCardNumber);
-    System.out.println(s1.firstName);
-    System.out.println(s1.lastName);
-    System.out.println(s1.yearOfStudy);
-    System.out.println(s1.averageGradeInMath);
-    System.out.println(s1.averageGradeInEconomics);
-    System.out.println(s1.averageGradeInForeignLanguage);
+//    System.out.println(s1.studentCardNumber);
+//    System.out.println(s1.firstName);
+//    System.out.println(s1.lastName);
+//    System.out.println(s1.yearOfStudy);
+//    System.out.println(s1.averageGradeInMath);
+//    System.out.println(s1.averageGradeInEconomics);
+//    System.out.println(s1.averageGradeInForeignLanguage);
 
     Student s2 = new Student();
     s2.studentCardNumber = 2L;
@@ -40,13 +40,13 @@ class StudentTest {
     s2.averageGradeInMath = 8.6;
     s2.averageGradeInEconomics = 3.0;
     s2.averageGradeInForeignLanguage = 7.0;
-    System.out.println(s2.studentCardNumber);
-    System.out.println(s2.firstName);
-    System.out.println(s2.lastName);
-    System.out.println(s2.yearOfStudy);
-    System.out.println(s2.averageGradeInMath);
-    System.out.println(s2.averageGradeInEconomics);
-    System.out.println(s2.averageGradeInForeignLanguage);
+//    System.out.println(s2.studentCardNumber);
+//    System.out.println(s2.firstName);
+//    System.out.println(s2.lastName);
+//    System.out.println(s2.yearOfStudy);
+//    System.out.println(s2.averageGradeInMath);
+//    System.out.println(s2.averageGradeInEconomics);
+//    System.out.println(s2.averageGradeInForeignLanguage);
 
     Student s3 = new Student();
     s3.studentCardNumber = 3L;
@@ -56,13 +56,13 @@ class StudentTest {
     s3.averageGradeInMath = 4.5;
     s3.averageGradeInEconomics = 5.0;
     s3.averageGradeInForeignLanguage = 7.0;
-    System.out.println(s3.studentCardNumber);
-    System.out.println(s3.firstName);
-    System.out.println(s3.lastName);
-    System.out.println(s3.yearOfStudy);
-    System.out.println(s3.averageGradeInMath);
-    System.out.println(s3.averageGradeInEconomics);
-    System.out.println(s3.averageGradeInForeignLanguage);
+//    System.out.println(s3.studentCardNumber);
+//    System.out.println(s3.firstName);
+//    System.out.println(s3.lastName);
+//    System.out.println(s3.yearOfStudy);
+//    System.out.println(s3.averageGradeInMath);
+//    System.out.println(s3.averageGradeInEconomics);
+//    System.out.println(s3.averageGradeInForeignLanguage);
 
     System.out.println("Arithmetic mean of student " + s1.firstName + " " + s1.lastName + ": "
         + (s1.averageGradeInMath + s1.averageGradeInEconomics + s1.averageGradeInForeignLanguage)
