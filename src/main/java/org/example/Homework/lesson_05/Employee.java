@@ -16,12 +16,13 @@ public class Employee {
   int salary;
   String department;
 
-  void salaryIncrease(){
+  void salaryIncrease() {
     salary *= 2;
   }
 }
 
-class EmployeeTest{
+class EmployeeTest {
+
   public static void main(String[] args) {
     Employee employee1 = new Employee(1, "John", 26, 1200, "Tech Support");
     Employee employee2 = new Employee(2, "Maria", 26, 2500, "Management");
