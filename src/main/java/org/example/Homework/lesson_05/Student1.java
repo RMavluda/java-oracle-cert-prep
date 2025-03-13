@@ -12,7 +12,6 @@ public class Student1 {
   Double averageGradeInEconomics;
   Double averageGradeInForeignLanguage;
 
-
 }
 
 class Student1Test {
