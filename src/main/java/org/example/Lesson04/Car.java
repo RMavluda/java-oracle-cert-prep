@@ -2,7 +2,7 @@ package org.example.Lesson04;
 
 public class Car {
 
-  Car(String svet, String motor){
+  Car(String svet, String motor) {
     color = svet;
     engine = motor;
 
@@ -33,8 +33,8 @@ class carTest {
 
   public static void main(String[] args) {
 
-    Car car1 = new Car("White", "V10") ;
-    Car car2 = new Car("Black", "V20") ;
+    Car car1 = new Car("White", "V10");
+    Car car2 = new Car("Black", "V20");
 //    System.out.println("Color car2: " + car2.color);
 //    System.out.println("Engine car2: " + car2.engine);
 
