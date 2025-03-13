@@ -1,7 +1,11 @@
 package org.example.Lesson05;
 
 public class Car2 {
-
+  void Car(){}
+  /*
+  * javada har qanday classda default constructor mavjud bo`ladi
+  * qachonki biz constructor yaratmagunimizgacha
+  * */
   String color;
   String engine;
   int speed;
