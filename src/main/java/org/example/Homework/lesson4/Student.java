@@ -74,8 +74,4 @@ class StudentTest {
         + (s3.averageGradeInMath + s3.averageGradeInEconomics + s3.averageGradeInForeignLanguage)
         / 3);
   }
-
-  static Double arithmeticMean(Double math, Double economics, Double foreignLanguage) {
-    return (math + economics + foreignLanguage) / 3;
-  }
 }
