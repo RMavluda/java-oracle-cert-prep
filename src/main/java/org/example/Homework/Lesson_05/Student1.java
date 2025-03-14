@@ -1,4 +1,4 @@
-package org.example.Homework.lesson_05;
+package org.example.Homework.Lesson_05;
 
 import java.time.LocalDate;
 
