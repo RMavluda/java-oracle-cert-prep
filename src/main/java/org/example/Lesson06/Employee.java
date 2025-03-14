@@ -2,21 +2,12 @@ package org.example.Lesson06;
 
 public class Employee {
 
-  public Employee(int id2, String surname2, int age2) {
-    id = id2;
-    surname = surname2;
+  Employee(int id2, String surname2, int age2) {
+    this(surname2, age2);
     age = age2;
   }
 
-  /*
-  protected Employee(int id2, String surname2, int age2) {
-    System.out.println("Hellooo");
-  }
-
-  huddi metodlardagi kabi, ushbu ko`rinishda constructor ham yaratib bo`midi.
-  constructorlar nomi yoki parametrlari bilan farqli bo`lishi shart
-    */
-  protected Employee(String surname2, int id2) {
+  Employee(String surname2, int id2) {
     surname = surname2;
     id = id2;
   }
@@ -49,3 +40,35 @@ class EmployeeTest {
   }
 
 }
+
+/*
+
+    Employee(int id2, String surname2, int age2) {
+    Employee(surname2, age2);
+    age = age2;
+  }
+
+  Employee(String surname2, int id2) {
+    surname = surname2;
+    id = id2;
+
+    !!constructor ichida unga overloading bo`lgan boshqaconstructorni chaqirib olib ishlatish mumkin emas
+    !!kompilyator bunga ruhsat bermidi
+    Uni o`rniga this.(...) bilan ishaltish to`hg`ri bo`ladi
+  }*/
+
+
+  /*
+  public   Employee(int id2, String surname2, int age2) {
+    id = id2;
+    surname = surname2;
+    age = age2;
+  }
+
+  protected Employee(int id2, String surname2, int age2) {
+    System.out.println("Hellooo");
+  }
+
+  !!huddi metodlardagi kabi, ushbu ko`rinishda constructor ham yaratib bo`midi.
+  !!constructorlar nomi yoki parametrlari bilan farqli bo`lishi shart
+    */
