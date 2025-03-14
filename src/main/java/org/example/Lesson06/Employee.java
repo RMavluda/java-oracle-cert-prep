@@ -1,0 +1,51 @@
+package org.example.Lesson06;
+
+public class Employee {
+
+  public Employee(int id2, String surname2, int age2) {
+    id = id2;
+    surname = surname2;
+    age = age2;
+  }
+
+  /*
+  protected Employee(int id2, String surname2, int age2) {
+    System.out.println("Hellooo");
+  }
+
+  huddi metodlardagi kabi, ushbu ko`rinishda constructor ham yaratib bo`midi.
+  constructorlar nomi yoki parametrlari bilan farqli bo`lishi shart
+    */
+  protected Employee(String surname2, int id2) {
+    surname = surname2;
+    id = id2;
+  }
+
+  Employee(int id2, String surname2, int age2, double salary2, String department2) {
+    id = id2;
+    surname = surname2;
+    age = age2;
+    salary = salary2;
+    department = department2;
+  }
+
+  int id;
+  String surname;
+  int age;
+  double salary;
+  String department;
+}
+
+class EmployeeTest {
+
+  public static void main(String[] args) {
+    Employee emp = new Employee(1, "Ivanov", 25);
+    System.out.println(emp.surname);
+    Employee emp2 = new Employee("Petrov", 12);
+    System.out.println(emp2.department);
+    Employee emp3 = new Employee(12, "Petrov", 40, 100.35, "Italy");
+    System.out.println(emp3.salary);
+
+  }
+
+}
