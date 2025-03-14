@@ -16,6 +16,13 @@ public class Student1 {
 
 class Student1Test {
 
+  double arithmeticMean(Student1 student1) {
+    double arMean = (student1.averageGradeInEconomics + student1.averageGradeInMath
+        + student1.averageGradeInForeignLanguage) / 3;
+    System.out.println(student1.firstName + " " + student1.lastName + " " + arMean);
+    return arMean;
+  }
+
   public static void main(String[] args) {
     Student1 s1 = new Student1();
     s1.studentCardNumber = 1L;
@@ -44,16 +51,9 @@ class Student1Test {
     s3.averageGradeInEconomics = 5.0;
     s3.averageGradeInForeignLanguage = 7.0;
 
-    System.out.println("Arithmetic mean of student " + s1.firstName + " " + s1.lastName + ": "
-        + arithmeticMean(s1));
-    System.out.println("Arithmetic mean of student " + s2.firstName + " " + s2.lastName + ": "
-        + arithmeticMean(s2));
-    System.out.println("Arithmetic mean of student " + s3.firstName + " " + s3.lastName + ": "
-        + arithmeticMean(s3));
-  }
-
-  static double arithmeticMean(Student1 student1) {
-    return (student1.averageGradeInEconomics + student1.averageGradeInMath
-        + student1.averageGradeInForeignLanguage) / 3;
+    Student1Test st = new Student1Test();
+    st.arithmeticMean(s1);
+    st.arithmeticMean(s2);
+    st.arithmeticMean(s3);
   }
 }
