@@ -4,7 +4,7 @@ public class Employee {
 
   Employee(int id2, String surname2, int age2) {
     this(surname2, age2);
-    age = age2;
+    id = id2;
   }
 
   Employee(String surname2, int id2) {
