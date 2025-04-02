@@ -1,7 +1,5 @@
 package org.example.Homework.Lesson_06;
 
-import java.time.LocalDate;
-
 public class Student {
 
 
