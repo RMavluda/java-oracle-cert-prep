@@ -1,6 +1,6 @@
 package org.example.Homework.Lesson_06;
 
-public class lesson_06 {
+public class Sum {
 
   void sum() {
     System.out.println("Sum zero numbers: " + 0);
@@ -19,10 +19,10 @@ public class lesson_06 {
   }
 }
 
-class lesson_06Test {
+class SumTest {
 
   public static void main(String[] args) {
-    lesson_06 obj = new lesson_06();
+    Sum obj = new Sum();
     obj.sum();
     obj.sumTwoNumbers(1, 2);
     obj.sumThreeNumbers(1, 2, 3);
