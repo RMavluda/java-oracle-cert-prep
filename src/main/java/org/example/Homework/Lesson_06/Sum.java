@@ -2,20 +2,34 @@ package org.example.Homework.Lesson_06;
 
 public class Sum {
 
-  void sum() {
-    System.out.println("Sum zero numbers: " + 0);
+  int sum() {
+    int result = 0;
+    System.out.println("Sum of all numbers: " + result);
+    return result;
   }
 
-  void sumTwoNumbers(int a, int b) {
-    System.out.println("Sum two numbers: " + (a + b));
+  int sum(int a) {
+    int result = a;
+    System.out.println("Sum of all numbers: " + result);
+    return result;
   }
 
-  void sumThreeNumbers(int a, int b, int c){
-    System.out.println("Sum three numbers: " + (a + b + c));
+  int sum(int a, int b) {
+    int result = a + b;
+    System.out.println("Sum of all numbers: " + result);
+    return result;
   }
 
-  void sumFourNumbers(int a, int b, int c, int d){
-    System.out.println("Sum four numbers: " + (a + b + c + d));
+  int sum(int a, int b, int c) {
+    int result = a + b + c;
+    System.out.println("Sum of all numbers: " + result);
+    return result;
+  }
+
+  int sum(int a, int b, int c, int d) {
+    int result = a + b + c + d;
+    System.out.println("Sum of all numbers: " + result);
+    return result;
   }
 }
 
@@ -24,9 +38,10 @@ class SumTest {
   public static void main(String[] args) {
     Sum obj = new Sum();
     obj.sum();
-    obj.sumTwoNumbers(1, 2);
-    obj.sumThreeNumbers(1, 2, 3);
-    obj.sumFourNumbers(1, 2, 3, 4);
+    obj.sum(1);
+    obj.sum(1, 2);
+    obj.sum(1, 2, 3);
+    obj.sum(1, 2, 3, 4);
 
   }
 }
