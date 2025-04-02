@@ -4,52 +4,64 @@ import java.time.LocalDate;
 
 public class Student {
 
-  Long studentCardNumber;
-  String firstName;
-  String lastName;
-  LocalDate yearOfStudy;
-  Double averageGradeInMath;
-  Double averageGradeInEconomics;
-  Double averageGradeInForeignLanguage;
 
-  Student(Long studentCardNumber1, String firstName1, String lastName1, LocalDate yearOfStudy1,
+  Student(int studentId1, String firstName1, String lastName1, int course1,
       Double averageGradeInMath1, Double averageGradeInEconomics1,
       Double averageGradeInForeignLanguage1) {
-    studentCardNumber = studentCardNumber1;
+    studentId = studentId1;
     firstName = firstName1;
     lastName = lastName1;
-    yearOfStudy = yearOfStudy1;
+    course = course1;
     averageGradeInMath = averageGradeInMath1;
     averageGradeInEconomics = averageGradeInEconomics1;
     averageGradeInForeignLanguage = averageGradeInForeignLanguage1;
   }
 
-  Student(Long studentCardNumber1, String firsName1, String lastName1, LocalDate yearOfStudy1){
-    studentCardNumber = studentCardNumber1;
-    firstName = firsName1;
-    lastName = lastName1;
-    yearOfStudy = yearOfStudy1;
+  Student(int studentId1, String firsName1, String lastName1, int course1) {
+    this(studentId1, firsName1, lastName1, course1, 0.0, 0.0, 0.0);
   }
 
-  Student(){
+  Student() {
   }
+
+  int studentId;
+  String firstName;
+  String lastName;
+  int course;
+  Double averageGradeInMath;
+  Double averageGradeInEconomics;
+  Double averageGradeInForeignLanguage;
 }
 
 class StudentTest {
 
-  public static void main(String[] args) {
-    Student s1 = new Student(1L, "John", "Smith", LocalDate.of(1990, 1, 1), 3.5, 5.5, 6.0);
+  double arithmeticMean(Student student) {
+    double arMean = (student.averageGradeInEconomics + student.averageGradeInMath
+        + student.averageGradeInForeignLanguage) / 3;
+    System.out.println(student.firstName + " " + student.lastName + " " + arMean);
+    return arMean;
+  }
 
-    Student s2 = new Student(2L, "Dali", "Ben", LocalDate.of(1999, 2, 2));
+  public static void main(String[] args) {
+    Student s1 = new Student(1, "John", "Smith", 2, 3.5, 5.5, 6.0);
+
+    Student s2 = new Student(2, "Dali", "Ben", 3);
+    s2.averageGradeInMath = 4.0;
+    s2.averageGradeInEconomics = 5.0;
+    s2.averageGradeInForeignLanguage = 6.0;
 
     Student s3 = new Student();
-    s3.studentCardNumber = 3L;
+    s3.studentId = 3;
     s3.firstName = "Natali";
     s3.lastName = "Wit";
-    s3.yearOfStudy = LocalDate.of(1945, 4, 12);
+    s3.course = 4;
     s3.averageGradeInMath = 4.5;
     s3.averageGradeInEconomics = 5.0;
     s3.averageGradeInForeignLanguage = 7.0;
 
+    StudentTest sTest = new StudentTest();
+    sTest.arithmeticMean(s1);
+    sTest.arithmeticMean(s2);
+    sTest.arithmeticMean(s3);
   }
 }
