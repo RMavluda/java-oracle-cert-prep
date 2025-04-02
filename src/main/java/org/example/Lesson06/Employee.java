@@ -7,7 +7,7 @@ public class Employee {
     id = id2;
   }
 
-  Employee(String surname2, int id2) {
+  public Employee(String surname2, int id2) {
     surname = surname2;
     id = id2;
   }
