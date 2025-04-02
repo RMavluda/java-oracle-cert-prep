@@ -35,3 +35,7 @@ class EmployeeTest {
   }
   *
   * private ga o`zgartirishimiz bilan hattoki shu fayl ichidagi EmployeeTest class uchun ham dostup yopiladi. Ya`ni private har qanday class uchun dostup yo`qligini anglatadi*/
+
+
+/*
+* default modifier faqatgina shu package ichida dostup borligini anglatadi*/
