@@ -5,7 +5,16 @@ public class Employee {
   public double salary;
 
   public void dvoynayaZP() {
-    System.out.println("Novaya Z/p: " + salary * 2);
+    double result = salary * 2;
+    /*
+    'double result = salary * 2':
+    -> bu o`zgaruvchilar instance hisoblanmidi, ular class ga emas metodga tegishli bo`ladi.
+    -> 'public double result = salary * 2;' ko`rinishida yozish xato hisoblanadi
+    -> local hisoblanadi. ular metod ichida yaratiladi, metod ichida foydalaniladi, metod ichda tugatiladi.
+    metod dan tashqarida result o`zgaruvchisiga dostup yopiq.
+    Shu sababli ularda access modifier mavjud emas
+    */
+    System.out.println("Novaya Z/p: " + result);
   }
 
   public Employee(double salary2) {
