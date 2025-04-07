@@ -1,4 +1,4 @@
-package org.example.Homework.Lesson08;
+package org.example.Lesson08;
 
 public class Test1 {
 
