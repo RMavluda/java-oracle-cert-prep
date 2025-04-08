@@ -5,29 +5,41 @@ public class Student {
   String name;
   int course;
   static int count; //class variable default 0
-  int count1; // object variable default 0
+  int a; // object variable default 0
 
   public Student(String name2, int course2) {
     count++;
     name = name2;
     course = course2;
     System.out.println("Student " + count + " sozdano");
-    System.out.println(count1);
   }
-  public static void showCount(){
+
+  public static void showCount() {
     System.out.println("Vsego sozdano studentov " + count);
   }
 
-  public static void main(String[] args) {
-    Student s1 = new Student("Ivan", 1);
-    Student s2 = new Student("Petr", 4);
-    Student s3 = new Student("Masha", 3);
+  public void showInfo() {
+    System.out.println("Welcome to the class");
+  }
 
-    System.out.println(s1.name);
-    System.out.println(count);
-    Student.showCount();
-    s2.showCount();
-    showCount();
+  void abc() {
+    a++;
+    count++;
+  }
+
+  static void abcd() {
+    count++;
+    //a++;
+    // non-static variable ni static method ichida foydalanish mumkin emas
+    // chunki non static variable object variable, static method esa class ga teshishli method
+
+    Student s2 = new Student("Ana", 1);
+    s2.a++;
+  }
+
+  public static void main(String[] args) {
+abcd(); // hech qanday object yaratmasdan chaqirishimiz mumkin, chunki u class variabe
+    //abc(); ni esa object yaratmasdan chaqira olmaymiz
   }
 
 }
