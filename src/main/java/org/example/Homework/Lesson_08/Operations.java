@@ -2,21 +2,19 @@ package org.example.Homework.Lesson_08;
 
 public class Operations{
 
-  int multiply(int a, int b, int c){
+  static double multiply(double a, double b, double c){
     return a * b * c;
   }
 
-  void division(int a, int b){
-    System.out.println("butun qism: " + a / b);
-    System.out.println("qoldiq qism: " + a % b);
+  static void division(int a, int b){
+    System.out.println("whole quotient: " + a / b + ", remainder: " + a % b);
   }
 }
 class OperationsTest{
   public static void main(String[] args){
-    Operations ob = new Operations();
-    ob.multiply(3, 4, 5);
-    ob.division(3, 4);
-    ob.multiply(6, 7, 8);
-    ob.division(6, 7);
+    System.out.println(Operations.multiply(2, 3, 4));
+    Operations.division(9, 2);
+    System.out.println(Operations.multiply(2.5, 3.5, 4.5));
+    Operations.division(23, 5);
   }
 }
