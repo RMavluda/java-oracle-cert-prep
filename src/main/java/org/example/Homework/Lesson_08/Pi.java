@@ -4,11 +4,13 @@ public class Pi {
   public static final double pi = 3.14;
 
   public double area(double radius) {
-    return pi * radius * radius;
+    double pl = pi * radius * radius;
+    return pl;
   }
 
   public static double circumference(double radius) {
-    return 2 * pi * radius;
+    double dl = 2 * pi * radius;
+    return dl;
   }
 
   public void allInformation(double radius) {
