@@ -1,4 +1,4 @@
-package org.example.Homework;
+package org.example.Homework.Lesson_01;
 
 public class lesson_01 {
 
