@@ -14,10 +14,11 @@ public class Car {
  * int True = 2; kabilar mumkin, ammo tavsiya qilinmidi
  * */
 
+  public static int ab = 1001;
   String color;
   int a = 10;
   String engine;
-  static int count;
+  public static int count = 11;
 //  static boolean a = true; hattoki static bo`lsa ham, bu ko`rinishda yaratish mumkin emas
 
 /*

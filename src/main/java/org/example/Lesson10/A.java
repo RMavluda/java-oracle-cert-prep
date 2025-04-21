@@ -1,14 +1,22 @@
 package org.example.Lesson10;
 
-import org.example.Homework.lesson_04.Student;
-/*
-* import org.example.Homework.*;
-* bu ko`rinishda student class ni topa olmaydi
-* */
+import static org.example.Lesson09.Car.*;
+
 public class A {
 
+  static int count = 99;
   public static void main(String[] args) {
-    Student st1 = new Student();
+    System.out.println(ab);
+    System.out.println(count);
+    // count avvaliga usbu classdan qidiriladi, topilmaganda import classdan qidiriladi
   }
 
 }
+
+/*
+* nega metod main static ??
+* bilamizki static metodni qandaydir class obyekti yaratmasdan chaqirib olishimiz mumkin
+* public - access modifier hohlagan joyda dostup bor
+* void - metod hech narsa qaytarmidi
+* String[] args - parametrda massiv string, bu haqda keyinchalik o`rganamiz
+* */
