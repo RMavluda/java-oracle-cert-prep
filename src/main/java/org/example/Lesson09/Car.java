@@ -36,7 +36,7 @@ public class Car {
     c.a = b;
   }
 
-  Car(String color, String engine) {
+  public Car(String color, String engine) {
     this.count++;
     this.color = color;
     this.engine = engine;

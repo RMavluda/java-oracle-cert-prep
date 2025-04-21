@@ -2,8 +2,14 @@ package org.example.Lesson09;
 
 public class Student {
 
+  int a = 10;
+  int b = this.a;
+  public static int c = 5;
+  public int z = this.c;
+  static int f = c;
 }
-class StudentTest{
+
+class StudentTest {
 
   public static void main(String[] args) {
     Student st1 = new Student();
@@ -14,11 +20,11 @@ class StudentTest{
 
     String s = "Student"; // String class obyekti yaratildi, String yagona konstruktorga murojat qilmasdan obyekt yaratish mumkin bolgan class
 
-                  ///// GARBAGE COLLECTOR /////
+    ///// GARBAGE COLLECTOR /////
     /*
-    * biz xotirani faqatgina to`ldirmasdan, uni bo`shatishimiz ham kerak
-    * GARBAGE collector obyketlarni qancha muddatda ochirishi nomalum, aynan mana shuni o`chiradi deb aytolmaymiz.
-    * faqatgina "mana shu garbage collector tomonidan o`chirilishi mumkin" (qachonligi nomalum bo`lganligi uchun) deya olamiz
-    * */
+     * biz xotirani faqatgina to`ldirmasdan, uni bo`shatishimiz ham kerak
+     * GARBAGE collector obyketlarni qancha muddatda ochirishi nomalum, aynan mana shuni o`chiradi deb aytolmaymiz.
+     * faqatgina "mana shu garbage collector tomonidan o`chirilishi mumkin" (qachonligi nomalum bo`lganligi uchun) deya olamiz
+     * */
   }
 }
