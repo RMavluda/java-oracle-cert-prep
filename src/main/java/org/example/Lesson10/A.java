@@ -20,3 +20,15 @@ public class A {
 * void - metod hech narsa qaytarmidi
 * String[] args - parametrda massiv string, bu haqda keyinchalik o`rganamiz
 * */
+
+// comments 3 xil bo`ladi
+
+// 1) end-of-line: ushbu qatorga comment yozish mumkin
+/*
+2)multiline:
+ushbu block ichiga comment yozish mumkin
+ */
+/*
+* 3)JavaDic
+* ushbu blockda asosan classga tegishli dokumentatsiya yozib qoldirish mumkin
+* */
