@@ -35,6 +35,8 @@ public class Student {
 
     changeName(s2);
     System.out.println(s2.name);
+
+    // reference data types - bu obyekt ma`lumotlarini(manzilini) saqlaydi
   }
 
 }
