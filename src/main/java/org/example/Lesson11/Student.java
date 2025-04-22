@@ -19,6 +19,10 @@ public class Student {
     System.out.println("student2 in method: " + st2.name + " " + st2.course + " " + st2.grade);
   }
 
+  public static void changeName(Student st1){
+    st1.name = "Vasiliy";
+  }
+
   public static void main(String[] args) {
     Student s1 = new Student("Ivan", 3, 9.5);
     Student s2 = new Student("Petr", 1, 5.3);
@@ -27,7 +31,10 @@ public class Student {
     swap(s1, s2);
     System.out.println("student1: " + s1.name + " " + s1.course + " " + s1.grade);
     System.out.println("student2: " + s2.name + " " + s2.course + " " + s2.grade);
-    // !!swap bo`lmidi!! chunki argumentda obyekt yozilsada, kopiyasi boradi. aynan o`zi emas
+    // !!swap bo`lmidi!! chunki argumentda obyekt yozilsada, kopiyasi boradi. aynan o`zi emas. pass by value
+
+    changeName(s2);
+    System.out.println(s2.name);
   }
 
 }
