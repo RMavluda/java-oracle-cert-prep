@@ -4,6 +4,7 @@ public class Test10 {
 
   public static void main(String[] args) {
     int salary = 100;
+    boolean b = true;
 
     if (salary < 200) {
       System.out.println("Z/P ochen nizka");
