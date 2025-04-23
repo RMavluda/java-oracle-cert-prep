@@ -17,7 +17,7 @@ public class Test10 {
      System.out.println("2: a < 20");
    else
      System.out.println("a > 20");
-   System.out.println("Hello everyone!");
+     System.out.println("Hello everyone!");
 
    //else da ham huddi shunday
     //figurali qovus qoyilmasa, faqat bittagina amal else ga kiradi
