@@ -19,7 +19,22 @@ public class Test10 {
      System.out.println("a > 20");
      System.out.println("Hello everyone!");
 
-   //else da ham huddi shunday
+    //else da ham huddi shunday
     //figurali qovus qoyilmasa, faqat bittagina amal else ga kiradi
+
+    int salary = 500;
+    if (salary >= 500) {
+      System.out.println(":)");
+    } else {
+      System.out.println(":(");
+    }
+
+    if (salary >= 500);
+    System.out.println("abrakadabra netu");
+//sout if ichida hisoblanmidi. if shunchaki tekshirib o`tadi holos, shu bilan tugidi.
+
+    if (salary > 500)
+    System.out.println("abrakadabra 100");
+    //sout if ichida hisoblanadi
   }
 }
