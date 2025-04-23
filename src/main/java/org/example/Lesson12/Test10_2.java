@@ -11,7 +11,7 @@ void maximum(int i1, int i2, int i3) {
   } else {
     int a = 15;
     System.out.println("Maximum: " + i3);
-  }
+  }}
 
   void abc(){
     String str;
@@ -27,8 +27,10 @@ void maximum(int i1, int i2, int i3) {
     }
     System.out.println(str);
   }
-}
   public static void main(String[] args) {
-
-  }
+    int a = 10;
+    int b = 20;
+    int maximum = (a > b ? a : b);
+    System.out.println(maximum);
+}
 }
