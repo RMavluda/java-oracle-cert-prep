@@ -13,10 +13,13 @@ public class Test10 {
     //ammo undan keyingi amallar ham bajarialdi
 
 
-   if(a < 20){
+   if(a < 20)
      System.out.println("2: a < 20");
-   }else{
+   else
      System.out.println("a > 20");
-   }
+   System.out.println("Hello everyone!");
+
+   //else da ham huddi shunday
+    //figurali qovus qoyilmasa, faqat bittagina amal else ga kiradi
   }
 }
