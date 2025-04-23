@@ -5,10 +5,20 @@ public class Student {
   int course;
   double grade;
 
-  Student(String name, int course, double grade) {
+  public Student(String name, int course, double grade) {
     this.name = name;
     this.course = course;
     this.grade = grade;
+  }
+
+  public String getName() {
+    return name;
+  }
+  public int getCourse() {
+    return course;
+  }
+  public double getGrade() {
+    return grade;
   }
 
   public static void swap(Student st1, Student st2){
