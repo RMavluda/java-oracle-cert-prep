@@ -1,5 +1,26 @@
 package org.example.Lesson12;
 
+public class Test10 {
+
+  public static void main(String[] args) {
+    int salary = 100;
+
+    if (salary < 200) {
+      System.out.println("Z/P ochen nizka");
+    } else if (salary < 400) {
+      System.out.println("Z/P srednego razmera");
+    } else if (salary < 600) {
+      System.out.println("Z/P visokaya");
+    } else {
+      System.out.println("Z/P otlichnaya");
+    }
+  }
+}
+
+
+
+
+/*
 
 public class Test10 {
 
@@ -38,6 +59,7 @@ public class Test10 {
     System.out.println("abrakadabra 100");
     //sout if ichida hisoblanadi
 
+*/
 /*    if (salary >= 500)
     System.out.println(":)))");
     System.out.println("!!!!!!!");
@@ -46,6 +68,8 @@ public class Test10 {
 
       ERROR chunki figurali qavs ishaltilmagan va else 2-virajeniyadan keyin yozilyapti'
       ya`ni bu ko`rinishda kompilyator else uchun if yozilmagan deb hisoblaydi
-      */
+      *//*
+
   }
 }
+*/
