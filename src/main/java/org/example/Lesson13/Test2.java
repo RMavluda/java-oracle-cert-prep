@@ -20,6 +20,24 @@ public class Test2 {
       default:
         System.out.println("Takogo dnya ne sushestvuyet");
     }
+/*    long l1 = 5L;
+    switch (l1){
+      case 4L:
+        System.out.println(4);
+      default:
+        System.out.println("xato");
+    }*/
   }
 
 }
+
+/*
+* switch(expression)
+* expression bo`lishi mumkin:
+* -byte
+* -short
+* -int
+* -char
+* -String
+*
+* boshqa typelarni qabul qilmidi*/
