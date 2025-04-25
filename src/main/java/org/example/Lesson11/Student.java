@@ -1,9 +1,9 @@
 package org.example.Lesson11;
 
 public class Student {
-  String name;
-  int course;
-  double grade;
+  public String name;
+  public int course;
+  public double grade;
 
   public Student(String name, int course, double grade) {
     this.name = name;
@@ -13,12 +13,6 @@ public class Student {
 
   public String getName() {
     return name;
-  }
-  public int getCourse() {
-    return course;
-  }
-  public double getGrade() {
-    return grade;
   }
 
   public static void swap(Student st1, Student st2){
