@@ -20,10 +20,14 @@ public class Test2 {
 //      System.out.println(i);
 //      abc(10);
 //    }
-    System.out.println("\nloop 5 without condition statement => infinitive:\n");
-    for (int i = 5; ;i++) {
+//    System.out.println("\nloop 5 without condition statement => infinitive:\n");
+//    for (int i = 5; ;i++) {
+//      System.out.println(i);
+//      abc(10);
+//    }
+
+    for (int i = 2; i <= 30; i = i + 2) {
       System.out.println(i);
-      abc(10);
     }
   }
 
