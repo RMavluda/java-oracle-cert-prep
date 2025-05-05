@@ -41,7 +41,11 @@ public class Test2 {
     String s3 = "Bye";
     System.out.println("s3 = " + s3);
 
-    String s16 = s3.replace("y", "y");
-    System.out.println(s3 == s16);
+    String s4 = s3.replace("y", "y");
+    System.out.println(s3 == s4);
+
+    String s5 = "hello";
+    String s6 = "friend";
+    System.out.println(s5.concat(s6) + " " + s5 + s6);
   }
 }
