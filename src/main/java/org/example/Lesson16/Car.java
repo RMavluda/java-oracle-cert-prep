@@ -27,3 +27,8 @@ final static Car car = new Car("red", "V9");
     System.out.println(c2.color + " " + c2.engine);
   }
 }
+
+/*
+* String is immutable = yaratilgan obyekt o`zgarmasdi
+* agar o`zgartirilsa u yangi obyekt sifatida yaratiladi
+* */
