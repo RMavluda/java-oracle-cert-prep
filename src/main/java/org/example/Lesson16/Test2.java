@@ -13,7 +13,7 @@ public class Test2 {
     String s11 = s1.substring(3, 7); // 7-simvol hisobga kirmidi
     System.out.println(s11);
 
-    String s12 = s1.trim(); // satr boshidagi bo`sh joylarni o`chiradi
+    String s12 = s1.trim(); // satr boshidagi va oxiridagi  bo`sh joylarni o`chiradi
     System.out.println(s12);
 
     String s13 = s1.substring(7, 13);
