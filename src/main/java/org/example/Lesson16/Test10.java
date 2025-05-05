@@ -8,7 +8,7 @@ public class Test10 {
      * x -> String pool dagi "hello" obyektini ko`rsatadi
      * Literal — avtomatik pool’da
      * */
-    String y = " hello".trim().intern();
+    String y = " hello".trim();
     /*
      * bu ifoda metod natijasi bo`lganligi uchun, String pool ga qo`shilmaydi
      * y -> Heapdagi "hello" qiymatli yangi obyekt
@@ -22,10 +22,25 @@ public class Test10 {
      * y -> heapdagi obyekt
      * manzillar har xil shuning uchun javob false
      * */
+
+    y = y.intern();
+    /*
+    * */
   }
 }
 
 /*
- * Stringpool "hello" qiymatli obyekt bor yoki yo`qligini tekshiradi
+String pool
+ * - string lar unique holda saqlanadi
+ * m-n: String pool "hello" qiymatli obyekt bor yoki yo`qligini tekshiradi
  * agar bor bo`lsa yangisini yaratmidi, adresini bor bo`lgan obyektnikiga o`zgartiradi holos
+ * - yuqoridagi sabab bilan xotira samaradorligi oshadi
+ * */
+
+/*
+Heap
+ * - har qanday new bilan yaratilgan obyektlar heap da joylashadi
+ * - yana Dynamic Memory ham deb ataladi, chunki ular dastur ishlayotganda yaratiladi.
+ * - Har bir obyekt uchun alohida hotira ajratiladi
+ * - Garbage Collector orqali tozalanadi, agar obyektga hech qanday referens bo`lmasa avtomatik xotiradan olib tashlaydi
  * */
