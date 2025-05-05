@@ -17,7 +17,7 @@ public class lesson15 {
         INNER:
         while (sekunda < 60) {
           if (sekunda * chas > minuta) {
-            continue INNER;
+            continue MIDDLE;
           }
           System.out.println(chas + ":" + minuta + ":" + sekunda);
           sekunda++;
