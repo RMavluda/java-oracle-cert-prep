@@ -37,8 +37,15 @@ public class Test1 {
     System.out.println(sb2.insert(sb2.length(), "Hello"));
 
     StringBuilder sb10 = new StringBuilder("Hello World");
-    sb10.delete(3, 6);
+//    sb10.delete(3, 6);
+//    System.out.println(sb10);
+    sb10.deleteCharAt(6);
     System.out.println(sb10);
+
+    StringBuilder sb12 = new StringBuilder("Vsem privet");
+    sb12.replace (0, 5, "Pete "); //5-element hisoblanmidi
+    System.out.println(sb12);
+    System.out.println(sb12.capacity());
 
   }
 }
