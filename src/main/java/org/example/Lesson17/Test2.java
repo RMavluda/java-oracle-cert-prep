@@ -10,6 +10,7 @@ public class Test2 {
 //    System.out.println("sb1 = " + sb1);
 //    System.out.println("sb2 = " + sb2);
     System.out.println(sb1 == sb2);
-    System.out.println(sb1.equals(sb2)); //StringBuilderda equals == bilan bir xil ishlidi
+    System.out.println(sb1.equals(sb2));
+    //StringBuilderda equals == bilan bir xil ishlidi, ya`ni hptiradagi bir obyektmi yoki yo`qligini tekshiradi
   }
 }
