@@ -17,3 +17,22 @@ public class Test5 {
     //chunki massivlar 0dan boshlab indexlanadi va m-n o`lchami 8 bolsa oxirgi element indexi 7 hisoblanadi
   }
 }
+
+/*
+* Qanday massivlarni e`lon qilish noto`g`ri hisobalnadi ?
+* a. int[][] array1 = new int[10][]; -> agar sout ga array1[1][1] yozilsa, NullPointerException bo`ladi. chunki ichki massiv o`lchami noaniq edi
+* b. Car[][][] array2 = new Car[1][0][7] -> bu to`g`ri e`lon qilish, faqat mantiqsiz. chunki [0] degani [7] ham mavjud emas deganidir
+* c. String array3[] = new array3[9] -> array3 o`rniga String yozilganda to`g`ri bo`lar edi
+* d. java.lang.String[] array4[] = new java.lang.String[5][]; -> sout ga array4[2][3] yozilsa, NullPointerException bo`ladi. chunki ichki massiv o`lchami noaniq edi
+* e. int[][] array5 = new int[]; -> chap tomonda ikki o`lchamli massiv e`lon qilingan, ammo o`ng tomonda bir o`lchamli yozilgan
+* f. int[][] array6 = new int[][]; skobkalar bir xil, ammo massiv o`lchami mavjud emas
+* */
+
+/*
+* Qanday massivlarni e`lon qilish to`g`ri hisoblanadi?
+* a. int array1[] = {3, 5, 6, 0}; // to`g`ri -> chunki, decloration & location 7 initialization
+* b. int[] array2 = new int[1]; // to`g`ri -> chunki, declaration & location
+* c. int[] array3 = new int[]{}; // to`g`ri -> chunki, decloration & location & initialization
+* d. int[] array4 = new int[2]{}; // xato -> chunki, bir vaqtda massiv o`lchamini va elementlarini e`lon qilish mumkin emas
+* e. int array5[] = new int[3]{0, 1, 2}; // xato -> chunki, bir vaqtda massiv o`lchamini va elementlarini e`lon qilish mumkin emas
+* */
