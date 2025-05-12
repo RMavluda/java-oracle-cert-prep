@@ -27,8 +27,15 @@ public class Test4 {
     /*
     * binarSearch faqat sortlangan massivlae uchun ishlaydi
     * */
+
+
     System.out.println(array1);
-    // bu yerda array1 obyekt bo`lganligi uchun uni tog`ridan-to`g`ri soutda chiqarishga urunganda massiv adresini chiqaradi
+    /*
+    bu yerda array1 obyekt bo`lganligi uchun uni tog`ridan-to`g`ri soutda chiqarishga urunganda massiv adresini chiqaradi
+     [ — bu massiv ekanligini bildiradi.
+     I — bu int turidagi massiv ekanini bildiradi.
+     @15db9742 — bu obyektning xotiradagi manzilini bildiruvchi hexadecimal(16 lik sanoq sistemasidagi) raqam.
+    */
 
   }
 
