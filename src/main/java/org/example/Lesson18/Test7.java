@@ -11,6 +11,8 @@ public class Test7 {
     sb.append(array, 2, 3);
     System.out.println(sb);
 
+    sb.insert(2, array, 1, 3);
+    System.out.println(sb);
   }
 
 
