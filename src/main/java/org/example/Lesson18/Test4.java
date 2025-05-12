@@ -17,8 +17,19 @@ public class Test4 {
     }
     System.out.println();
     //binarySearch(array, value)
-    int index1 = Arrays.binarySearch(array1, 5);
+    int index1 = Arrays.binarySearch(array1, 2);
+    /*
+    massivda yo`q element qidirilganda,
+    agar massivda shu element bo`lganida qaysi indexda turgan bo`lar edi shu index ni manfiy qiymatga o`tkazadi
+    va -1 qiymatni chiqarqadi
+    */
     System.out.println(index1);
+    /*
+    * binarSearch faqat sortlangan massivlae uchun ishlaydi
+    * */
+    System.out.println(array1);
+    // bu yerda array1 obyekt bo`lganligi uchun uni tog`ridan-to`g`ri soutda chiqarishga urunganda massiv adresini chiqaradi
+
   }
 
 }
