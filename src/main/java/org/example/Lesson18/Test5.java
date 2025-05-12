@@ -20,12 +20,12 @@ public class Test5 {
 
 /*
 * Qanday massivlarni e`lon qilish noto`g`ri hisobalnadi ?
-* a. int[][] array1 = new int[10][]; -> agar sout ga array1[1][1] yozilsa, NullPointerException bo`ladi. chunki ichki massiv o`lchami noaniq edi
-* b. Car[][][] array2 = new Car[1][0][7] -> bu to`g`ri e`lon qilish, faqat mantiqsiz. chunki [0] degani [7] ham mavjud emas deganidir
-* c. String array3[] = new array3[9] -> array3 o`rniga String yozilganda to`g`ri bo`lar edi
-* d. java.lang.String[] array4[] = new java.lang.String[5][]; -> sout ga array4[2][3] yozilsa, NullPointerException bo`ladi. chunki ichki massiv o`lchami noaniq edi
-* e. int[][] array5 = new int[]; -> chap tomonda ikki o`lchamli massiv e`lon qilingan, ammo o`ng tomonda bir o`lchamli yozilgan
-* f. int[][] array6 = new int[][]; skobkalar bir xil, ammo massiv o`lchami mavjud emas
+* a. int[][] array1 = new int[10][]; to`g`ri-> faqat, agar sout ga array1[1][1] yozilsa, NullPointerException bo`ladi. chunki ichki massiv o`lchami noaniq edi
+* b. Car[][][] array2 = new Car[1][0][7] to`g`ri -> faqat, mantiqsiz. chunki [0] degani [7] ham mavjud emas deganidir
+* c. String array3[] = new array3[9] xato -> array3 o`rniga String yozilganda to`g`ri bo`lar edi
+* d. java.lang.String[] array4[] = new java.lang.String[5][]; to`g`ri -> faqat, sout ga array4[2][3] yozilsa, NullPointerException bo`ladi. chunki ichki massiv o`lchami noaniq edi
+* e. int[][] array5 = new int[]; xato -> chap tomonda ikki o`lchamli massiv e`lon qilingan, ammo o`ng tomonda bir o`lchamli yozilgan
+* f. int[][] array6 = new int[][]; xato -> skobkalar bir xil, ammo massiv o`lchami mavjud emas
 * */
 
 /*
