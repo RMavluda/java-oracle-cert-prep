@@ -9,9 +9,8 @@ public class Test2 {
     int[] array6[]; // => int[][] array6; || int array6[][];
     int[][] array7[]; // => int[][][] array7; || int array7[][][]; || int[] array7[][];
     int[] array, a; // array ham a ham massiv sifatida e`lon qilgan bo`lamiz
-    int b [], c; // b massiv, c o`zgaruvchi sifatida e`lon qilgan bo`lamiz, ya`ni c massiv emas
+    int b[], c; // b massiv, c o`zgaruvchi sifatida e`lon qilgan bo`lamiz, ya`ni c massiv emas
     int[] d, e[][]; // d birlik massiv, e uchlik masssiv sifatida e`lon qilgan bo`lamiz, chunki int[] ikkalasiga ham tasir qiladi
-
 
     // location
     array1 = new String[3];

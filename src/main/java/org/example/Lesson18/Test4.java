@@ -25,9 +25,8 @@ public class Test4 {
     */
     System.out.println(index1);
     /*
-    * binarSearch faqat sortlangan massivlae uchun ishlaydi
-    * */
-
+     * binarSearch faqat sortlangan massivlae uchun ishlaydi
+     * */
 
     System.out.println(array1);
     /*
