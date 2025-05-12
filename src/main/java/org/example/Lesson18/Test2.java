@@ -6,6 +6,13 @@ public class Test2 {
     //declaration
     String[] array1;
     int[][] array2;
+    int[] array6[]; // => int[][] array6; || int array6[][];
+    int[][] array7[]; // => int[][][] array7; || int array7[][][]; || int[] array7[][];
+    int[] array, a; // array ham a ham massiv sifatida e`lon qilgan bo`lamiz
+    int b [], c; // b massiv, c o`zgaruvchi sifatida e`lon qilgan bo`lamiz, ya`ni c massiv emas
+    int[] d, e[][]; // d birlik massiv, e uchlik masssiv sifatida e`lon qilgan bo`lamiz, chunki int[] ikkalasiga ham tasir qiladi
+
+
     // location
     array1 = new String[3];
     array2 = new int[3][0];
@@ -37,6 +44,10 @@ public class Test2 {
 
     // tak nelzya!!!! massiv o`lchami e`lon qilinmasdan unga ma`lumot kiritixh mumkin emas
     // array4 = {1, 2, 3};
+
+    int[] array5 = new int[]{1, 2, 3};
+    // mumkin emas !!!
+    // int[] array5 = new int[3]{1, 2, 3};
   }
 
 }
