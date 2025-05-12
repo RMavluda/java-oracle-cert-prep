@@ -8,6 +8,8 @@ public class Test1 {
     String[] array2;
     double[][] array3;
     int[][] array10;
+    double[] array5;
+    double[] array7;
 
     // location
 //    array1 = new int[8];
@@ -28,12 +30,13 @@ public class Test1 {
     array3[0][0] = 3.14;
     array3[2][1] = 3.14;
 
-    double[] array5;
     array5 = new double[2];
     array5[0] = 2.5;
     array5[1] = 3.5;
-
+    array7 = array5;
     array3[1] = array5;
+
+    System.out.println(array3[1][0]);
   }
 
 }
