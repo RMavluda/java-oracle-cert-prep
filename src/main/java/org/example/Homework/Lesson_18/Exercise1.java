@@ -1,6 +1,6 @@
 package org.example.Homework.Lesson_18;
 
-public class Task1 {
+public class Exercise1 {
 
   public static int[] sortA(int[] array) {
     for(int i = 0; i < array.length - 1; i++) {
