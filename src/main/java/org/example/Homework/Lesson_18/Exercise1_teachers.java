@@ -2,6 +2,7 @@ package org.example.Homework.Lesson_18;
 
 public class Exercise1_teachers {
 
+  //Selection sort (classic)
   public static int[] sortirovka(int[] array) {
     int a;
     for (int i = 0; i < array.length - 1; i++) {
