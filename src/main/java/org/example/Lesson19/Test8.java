@@ -9,6 +9,10 @@ public class Test8 {
    }
 
    for(int a : array){
+     a *= 10;
+   }
+
+   for(int a : array){
      System.out.print(a + " ");
    }
   }
