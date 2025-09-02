@@ -1,5 +1,3 @@
-package org.example.test;
-
 class Homework19 {
  public static String[] abc(String[] ... array1){
    int length = 0;
