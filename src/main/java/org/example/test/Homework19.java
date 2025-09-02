@@ -1,6 +1,6 @@
-package org.example.Homework.Lesson_19;
+package org.example.test;
 
-public class Homework19 {
+class Homework19 {
  public static String[] abc(String[] ... array1){
    int length = 0;
    for(String[] array2 : array1){
@@ -10,7 +10,7 @@ public class Homework19 {
    int count = 0;
    for(String[] array2 : array1){
      for(String s : array2){
-       target[count] = s;
+       target[count++] = s;
      }
    }
    return target;
@@ -27,7 +27,7 @@ public class Homework19 {
       }
     }
     for(String s : target){
-      System.out.println(s + " ");
+      System.out.print(s + " ");
     }
     System.out.println();
  }
