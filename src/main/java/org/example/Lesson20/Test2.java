@@ -18,5 +18,7 @@ public class Test2 {
     for (String s : list) {
       System.out.println(s + " ");
     }
+    System.out.println();
+    System.out.println(list.get(3));
   }
 }
