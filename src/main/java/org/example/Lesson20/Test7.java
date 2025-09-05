@@ -19,6 +19,22 @@ public class Test7 {
     Collections.sort(list1);
     System.out.println(list1);
 
-  }
+    ArrayList<String> list2 = list1;
+    System.out.println(list1.equals(list2));
 
+    ArrayList<String> list3 = new ArrayList<>();
+    list3.add(s3);
+    list3.add(s1);
+    list3.add(s4);
+    list3.add(s2);
+    System.out.println(list1.equals(list3));
+    ArrayList<String> list4 = new ArrayList<>();
+    list4.add(s2);
+    list4.add(s2);
+    list4.add(s4);
+    list4.add(s3);
+    list4.add(s1);
+    System.out.println(list1.equals(list4));
+
+  }
 }
