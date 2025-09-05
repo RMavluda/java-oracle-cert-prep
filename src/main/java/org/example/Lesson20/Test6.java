@@ -1,6 +1,8 @@
 package org.example.Lesson20;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Test6 {
 
@@ -13,7 +15,7 @@ public class Test6 {
     list1.add(sb1);
     list1.add(sb2);
     list1.add(sb3);
-    ArrayList<StringBuilder> list3 = list1;
+/*    ArrayList<StringBuilder> list3 = list1;
     ArrayList<StringBuilder> list2 = (ArrayList<StringBuilder>) list1.clone();
     System.out.println(list1 == list3);
     System.out.println(list1.get(0) == list2.get(0));
@@ -21,9 +23,32 @@ public class Test6 {
 //    list1.set(0, new StringBuilder("D"));
 //    System.out.println(list2.get(0));
     list1.set(0, new StringBuilder("D"));
-    System.out.println(list2.get(0));
+    System.out.println(list2.get(0));*/
 
+    Object[] array1 = list1.toArray();
+    for (Object o : array1) {
+      System.out.println(o);
+    }
+    System.out.println();
+//    StringBuilder [] array2 = list1.toArray(new StringBuilder[10]);
+/* list1 ning size berilgan size dan kichik bo`lsa array2 qolgan larini null bilan to`ldiradi*/
+//    StringBuilder [] array2 = list1.toArray(new StringBuilder[1]);
+//    for(StringBuilder sb : array2){
+//      System.out.println(sb);
+//    }
+//    System.out.println(array2.length);
+    StringBuilder[] array = {sb2, sb3, sb3, sb3};
+    List<StringBuilder> listB = Arrays.asList(array);
+    System.out.println(listB);
 
+    /*
+    * asList da clone va toArray dan farqli List ning o`lchami array o`lchami bilan bir xil bo`ladi ozgartirilmidi
+    * agar array dagi obyekt o`zgartirilsa, listda ham o`zgaradi*/
+
+    array[0].append("!!!");
+    System.out.println(listB);
+    array[0] = new StringBuilder("!!!!!");
+    System.out.println(listB);
   }
 
 }
