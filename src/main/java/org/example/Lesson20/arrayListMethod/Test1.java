@@ -19,7 +19,10 @@ public class Test1 {
     al2.add("nine");
     al2.add("ten");
 
-    al1.removeAll(al2);
+//    al1.removeAll(al2);
+//    System.out.println("al1 = " + al1);
+
+    al1.retainAll(al2);
     System.out.println("al1 = " + al1);
   }
 }
