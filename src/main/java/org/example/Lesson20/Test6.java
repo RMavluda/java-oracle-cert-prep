@@ -20,6 +20,7 @@ public class Test6 {
     list1.get(0).append("!!!");
 //    list1.set(0, new StringBuilder("D"));
 //    System.out.println(list2.get(0));
+    list1.set(0, new StringBuilder("D"));
     System.out.println(list2.get(0));
 
 
