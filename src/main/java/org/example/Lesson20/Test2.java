@@ -31,5 +31,11 @@ public class Test2 {
     for (StringBuilder s : list) {
       System.out.print(s + " ");
     }
+    System.out.println();
+    list.clear();
+    for (StringBuilder s : list) {
+      System.out.print(s + " - ");
+    }
+
   }
 }
