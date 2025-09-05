@@ -18,8 +18,11 @@ public class Test6 {
     System.out.println(list1 == list3);
     System.out.println(list1.get(0) == list2.get(0));
     list1.get(0).append("!!!");
-    list1.set(0, new StringBuilder("D"));
+//    list1.set(0, new StringBuilder("D"));
+//    System.out.println(list2.get(0));
     System.out.println(list2.get(0));
+
+
   }
 
 }
