@@ -27,3 +27,7 @@ public class Test3 {
   }
 
 }
+/*
+ * list.remove("poka") StringBuilder da ishlamidi
+ * chunki StringBuilder da 'equals' va '==' bir xil vazifa barajaradi.
+ * qachonki ikkalasi ham bir xil obyektga murojaat  qilsagina true qolgan holatlarda false bo`ladi*/
