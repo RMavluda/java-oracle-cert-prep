@@ -12,11 +12,17 @@ public class Test3 {
     list.add(sb1);
     list.add(sb2);
     list.add(sb3);
-    for(int i = 0; i < list.size(); i++){
-      list.get(i).append(" !!!");
+//    for (int i = 0; i < list.size(); i++) {
+//      list.get(i).append(" !!!");
+//    }
+    for (StringBuilder sb : list) {
+      System.out.print(sb + " ");
     }
-    for(StringBuilder sb:list){
-      System.out.println(sb + " ");
+    System.out.println();
+//    list.remove(2);
+    list.remove(sb2);
+    for (StringBuilder sb : list) {
+      System.out.print(sb + " ");
     }
   }
 
