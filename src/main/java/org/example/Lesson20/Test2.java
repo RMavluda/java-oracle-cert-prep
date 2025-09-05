@@ -27,7 +27,7 @@ public class Test2 {
       System.out.print(s + " ");
     }
     System.out.println();
-    list2.set(1, new StringBuilder("Ivanov"));
+    list2.get(1).append("!");
     for (StringBuilder s : list) {
       System.out.print(s + " ");
     }
