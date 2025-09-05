@@ -16,11 +16,12 @@ public class Test2 {
 //     list.add(5, "ok");
 //   IndexOutOfBoundsException: Index: 5, Size: 4 ---> o`lchami 4 bo`lgan ArrayListga 5-elementni index orqali qo`shishga ruhsat bermidi
     for (String s : list) {
-      System.out.println(s + " ");
+      System.out.print(s + " ");
     }
     System.out.println();
-    for(int i = 0; i < list.size(); i++){
-      System.out.println(list.get(i));
+    list.remove("poka");
+    for(String s : list){
+      System.out.print(s + " ");
     }
   }
 }
