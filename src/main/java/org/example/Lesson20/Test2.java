@@ -19,7 +19,10 @@ public class Test2 {
       System.out.print(s + " ");
     }
     System.out.println();
-    list.remove("poka");
+    ArrayList<String> list2 = new ArrayList<>();
+    list2.add("Petrov");
+    list2.add("Sidorov");
+    list.addAll(list2);
     for(String s : list){
       System.out.print(s + " ");
     }
