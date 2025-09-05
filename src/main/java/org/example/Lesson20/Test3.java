@@ -15,8 +15,8 @@ public class Test3 {
     for(int i = 0; i < list.size(); i++){
       list.get(i).append(" !!!");
     }
-    for(int i = 0; i < list.size(); i++){
-      System.out.println(list.get(i) + " ");
+    for(StringBuilder sb:list){
+      System.out.println(sb + " ");
     }
   }
 
