@@ -19,17 +19,17 @@ public class Test1 {
     al2.add("nine");
     al2.add("ten");
 
-//    al1.removeAll(al2);
-//    System.out.println("al1 = " + al1);
+/*    al1.removeAll(al2);
+    System.out.println("al1 = " + al1);*/
 
-//    al1.retainAll(al2);
-//    System.out.println("al1 = " + al1);
+/*    al1.retainAll(al2);
+    System.out.println("al1 = " + al1);*/
 
-    boolean result = al1.containsAll(al2);
-    /*
+/*    boolean result = al1.containsAll(al2);
+    *//*
      * contains -->> al1 da al2 ning barcha elementlari bormi?
-     * */
-    System.out.println("result = " + result);
+     * *//*
+    System.out.println("result = " + result);*/
 
   }
 }
