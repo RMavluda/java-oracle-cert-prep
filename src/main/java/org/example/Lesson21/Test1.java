@@ -54,4 +54,15 @@ public class Test1 {
  *   }
  * }
  * default bo`lib to`g`ridan to`g`ri A class import qilingan paskage ni tanlidi
+ *
+ * 4)
+ * import p1.*;
+ * import p2.*;
+ * public class C {
+ *     public static void main(String[] args) {
+ *         p1.A obj1 = new p1.A();
+ *         p2.A obj2 = new p2.A()
+ * }
+ * }
+ *  pascage ni ko`rsatgan holda qilish mumkin
  * */
