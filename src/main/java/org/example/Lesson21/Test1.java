@@ -62,7 +62,7 @@ public class Test1 {
  *     public static void main(String[] args) {
  *         p1.A obj1 = new p1.A();
  *         p2.A obj2 = new p2.A()
- * }
+ *  }
  * }
  *  pascage ni ko`rsatgan holda qilish mumkin
  * */
