@@ -25,12 +25,33 @@ public class Test1 {
 }
 
 /*
-* 1) ikkala package da ham bir xil nomdagi 'A' class yaratilsa
-* va mana shu ikkala class ham boshqa 'B' classda import qilinsa error bo`ladi
-* chunki kompilyator qaysi 'A' class ni tanlashni bilmidi
-*
-* 2) agar ikkala package da ham bir xil class bo`lsayu
-* biz uchinchi 'C' classda qolgan ikkala paskage ning barcha class larini chaqirib olishga ruhsat beriladi
-* ammo to`g`ridan to`g`ri 'A' class class dan yangi obyekt yarata olmimiz
-* pascage ni ko`rsatgan holdagina qilish mumkin
-* */
+ * 1)
+ * import p1.A;
+ * import p2.A; // ERROR
+ * ikkala package da ham bir xil nomdagi 'A' class yaratilsa
+ * va mana shu ikkala class ham boshqa 'B' classda import qilinsa error bo`ladi
+ * chunki kompilyator qaysi 'A' class ni tanlashni bilmidi
+ *
+ * 2)
+ * import p1.*;
+ * import p2.*;
+ * public class C {
+ *     public static void main(String[] args) {
+ *       A obj = new A(); // ERROR: Reference to A is ambiguous
+ *   }
+ * }
+ * agar ikkala package da ham bir xil class bo`lsayu
+ * biz uchinchi 'C' classda qolgan ikkala paskage ning barcha class larini chaqirib olishga ruhsat beriladi
+ * ammo to`g`ridan to`g`ri 'A' class class dan yangi obyekt yarata olmimiz
+ * pascage ni ko`rsatgan holdagina qilish mumkin
+ *
+ * 3)
+ * import p1.A;
+ * import p2.*;
+ * public class C {
+ *     public static void main(String[] args) {
+ *       A obj = new A();
+ *   }
+ * }
+ * default bo`lib to`g`ridan to`g`ri A class import qilingan paskage ni tanlidi
+ * */
