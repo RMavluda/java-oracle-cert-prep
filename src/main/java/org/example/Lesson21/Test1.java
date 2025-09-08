@@ -6,11 +6,11 @@ public class Test1 {
 //    int a = 4;
 //    System.out.println(a < 4 ? 7 : "privet");
     /*
-     * ternary operation da exception lar bir xil type da bo`lishi shart emas
+     * ternary operator da exception lar bir xil type da bo`lishi shart emas
      * */
     /*
      * int b = (a < 7) ? 7 : "privet";
-     * lekin bu ko`rinishda yozishningiloji yo`q
+     * lekin bu ko`rinishda yozishningi loji yo`q
      * chunki String ni int type ga joylashga urunilyapti
      *  */
     int a = 5;
