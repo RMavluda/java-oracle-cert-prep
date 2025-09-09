@@ -19,7 +19,7 @@ public class Test3 {
   }
 }
 
-class Employee extends java.lang.Object{
+class Employee extends java.lang.Object{ // auto extends olingan bo`ladi
 
   double salary;
   String name;
