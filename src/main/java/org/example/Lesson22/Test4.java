@@ -6,8 +6,9 @@ public class Test4 {
 
 class Human2 {
 
-    Human2() {
-
+    Human2(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
 //    Human2() {
@@ -27,9 +28,12 @@ class Human2 {
 }
 
 class Student2 extends Human2 {
+    int course;
 
-    Student2(String s) {
-        System.out.println("Hello");
+    Student2(String name, String surname, int course) {
+//        System.out.println("Hello");
+        super(name, surname);
+        this.course = course;
     }
 //    Student2() {
 //        this(5);
@@ -41,6 +45,7 @@ class Student2 extends Human2 {
 //    }
 
     public static void main(String[] args) {
-        Student2 s = new Student2("ok");
+        Student2 s = new Student2("Petya", "Ivanov", 26);
+        System.out.println(s.name);
     }
 }
