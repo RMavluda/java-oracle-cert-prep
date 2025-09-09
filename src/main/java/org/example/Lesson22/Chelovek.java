@@ -14,13 +14,14 @@ public class Chelovek {
     return clever;
   }
 
-  private String name;
+  private StringBuilder name;
 
-  public String getName() {
-    return name;
+  public StringBuilder getName() {
+    StringBuilder sb = new StringBuilder(name);
+    return sb;
   }
 
-  public void setName(String name) {
+  public void setName(StringBuilder name) {
     this.name = name;
   }
 
@@ -51,7 +52,9 @@ class Test {
 
   public static void main(String[] args) {
     Chelovek ch = new Chelovek("male");
-    ch.setName("Petya");
+    ch.setName(new StringBuilder ("Petya"));
+    ch.getName().append("!!!");
+    System.out.println(ch.getName());
     ch.setAge(25);
     ch.setHeight(80);
     System.out.println(ch.getName());
@@ -61,3 +64,5 @@ class Test {
     System.out.println(ch.getHeight());
   }
 }
+/*
+* get method orqali yuborilgan ma`lumotni o`zagrtirish imkonsiz bo`lishi kerak*/

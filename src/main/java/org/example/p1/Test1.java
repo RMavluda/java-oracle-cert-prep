@@ -6,7 +6,7 @@ public class Test1 {
 
   public static void main(String[] args) {
     Chelovek ch = new Chelovek("male");
-    ch.setName("Petya");
+    ch.setName(new StringBuilder("Petya"));
     ch.setAge(25);
     ch.setHeight(80);
   }
