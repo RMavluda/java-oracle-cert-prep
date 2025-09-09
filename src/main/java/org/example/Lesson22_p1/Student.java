@@ -11,6 +11,9 @@ public class Student extends Human {
     s.work();
     Student.rest();
 
+//    Human h = new Human();
+//    System.out.println(h.name);
+//    h.work();
   }
 }
 
