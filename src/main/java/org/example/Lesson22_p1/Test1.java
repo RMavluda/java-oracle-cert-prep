@@ -1,4 +1,4 @@
-package org.example.p1;
+package org.example.Lesson22_p1;
 
 import org.example.Lesson22.Chelovek;
 
