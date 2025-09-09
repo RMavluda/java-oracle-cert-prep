@@ -13,3 +13,15 @@ public class Student extends Human {
 
   }
 }
+
+class Test {
+
+  public static void main(String[] args) {
+    Student s = new Student();
+//    System.out.println(s.name);
+//    System.out.println(Student.salary);
+    /*agar super classda protected methodlar mavjud bo`lsa u faqat nasl olgan classlarda va shu package classlarida ko`rinadi
+     * yani protected package ichida erkin, atshqarida nasl orqali qoidasi */
+
+  }
+}
