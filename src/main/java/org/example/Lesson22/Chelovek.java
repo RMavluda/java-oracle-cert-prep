@@ -4,7 +4,7 @@ public class Chelovek {
 
   final String pol;
 
-  Chelovek(String pol) {
+  public Chelovek(String pol) {
     this.pol = pol;
   }
 
