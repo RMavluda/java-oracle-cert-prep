@@ -2,6 +2,10 @@ package org.example.Lesson22;
 
 public class Test3 {
 
+  void uvZarp(Employee e) {
+    e.salary = e.salary * 2;
+  }
+
   public static void main(String[] args) {
     Doctor doc = new Doctor();
     doc.name = "Ivan";
@@ -15,8 +19,9 @@ public class Test3 {
   }
 }
 
-class Employee {
+class Employee extends java.lang.Object{
 
+  double salary;
   String name;
   int age;
   int experience;
@@ -38,6 +43,27 @@ class Doctor extends Employee {
     System.out.println("lechit");
   }
 }
+
+class Xirurg extends Doctor {
+
+  String skalpel;
+
+  void operatsiya() {
+
+  }
+}
+
+class Dentist extends Doctor {
+
+}
+
+/*
+*
+*
+*
+*
+*
+* */
 
 class Teacher extends Employee {
 
