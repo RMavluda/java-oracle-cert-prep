@@ -1,12 +1,12 @@
 package org.example.Homework.Lesson_22;
 
-public class Student {
+public class StudentMy {
 
   StringBuilder name;
   int course;
   int grade;
 
-  Student(StringBuilder name, int course, int grade) {
+  StudentMy(StringBuilder name, int course, int grade) {
     this.name = name;
     this.course = course;
     this.grade = grade;
@@ -24,7 +24,7 @@ public class Student {
     return (grade < 1 || grade > 10) ? false : true;
   }
 
-  public void showInfo(Student student) {
+  public void showInfo(StudentMy student) {
     System.out.println(student.name);
     System.out.println(student.course);
     System.out.println(student.grade);
@@ -34,7 +34,7 @@ public class Student {
 class TestStudent {
 
   public static void main(String[] args) {
-    Student student = new Student(new StringBuilder("Maksim"), 5, 8);
+    StudentMy student = new StudentMy(new StringBuilder("Maksim"), 5, 8);
 //    student.checkName(student.name);
 //    student.checkCourse(student.course);
 //    student.checkGrade(student.grade);
