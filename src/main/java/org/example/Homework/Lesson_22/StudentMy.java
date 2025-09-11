@@ -31,7 +31,7 @@ public class StudentMy {
   }
 }
 
-class TestStudent {
+class TestStudentMy {
 
   public static void main(String[] args) {
     StudentMy student = new StudentMy(new StringBuilder("Maksim"), 5, 8);
