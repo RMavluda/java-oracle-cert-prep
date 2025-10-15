@@ -3,21 +3,15 @@ package org.example.Lesson23;
 public class Test3 {
 
   public static void main(String[] args) {
-    Employee1 e = new Employee1();
+    Employee1 e = new Teacher1();
     e.eat();
-    Teacher1 t = new Teacher1();
-    t.eat();
   }
 
 }
 
-class Eda {
+class Eda {}
 
-}
-
-class Frukti extends Eda {
-
-}
+class Frukti extends Eda {}
 
 class Employee1 {
 
