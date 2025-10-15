@@ -9,9 +9,13 @@ public class Test3 {
 
 }
 
-class Eda {}
+class Eda {
 
-class Frukti extends Eda {}
+}
+
+class Frukti extends Eda {
+
+}
 
 class Employee1 {
 
@@ -24,7 +28,7 @@ class Employee1 {
     System.out.println("Kushatet rabotnik");
   }*/
 
-  public Eda eat(){
+  public Eda eat() {
     System.out.println("Kushatet rabotnik");
     Eda e = new Eda();
     return e;
@@ -50,7 +54,7 @@ class Teacher1 extends Employee1 {
   // return type super-class bilan bir xil bo`lmasligi mumkin, faqat return type sub-class return type ning sub-classi bo`la oladi
  /* Overridingda visibility (ko‘rinish) faqat kengaytiriladi yoki o‘sha holatda qoladi
     Lekin hech qachon kamaytirilmidi*/
-  public Frukti eat(){
+  public Frukti eat() {
 
     System.out.println("Kushatet uchitel");
     Frukti f = new Frukti();
