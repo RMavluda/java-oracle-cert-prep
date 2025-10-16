@@ -11,6 +11,8 @@ public class Test5 {
 //    emp.sleep();
     e.sleep();
 
+    System.out.println(e.salary);
+
   }
 
 }
@@ -35,7 +37,7 @@ class Employee2 {
     return e;
   }
 
-// sub-class bu methoddan inheritance - meros olib bilmidi, private bo`lganligi uchun
+  // sub-class bu methoddan inheritance - meros olib bilmidi, private bo`lganligi uchun
   static void sleep() {
     System.out.println("Spit rabotnik");
   }
@@ -43,8 +45,9 @@ class Employee2 {
 
 class Teacher2 extends Employee2 {
 
-//Polymorphism faqat instance (non-static) metodlar uchun ishlaydi
-  static void sleep(){
+  double salar = 200;
+  //Polymorphism faqat instance (non-static) metodlar uchun ishlaydi
+  static void sleep() {
     System.out.println("Spit uchitel");
   }
 
