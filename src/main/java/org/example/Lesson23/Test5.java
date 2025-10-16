@@ -17,7 +17,7 @@ public class Test5 {
 
 }
 
-class Eda1 {
+public class Eda1 {
 
 }
 
@@ -31,31 +31,43 @@ class Employee2 {
   double salary = 100;
   String name = "Kolya";
 
-  public Eda1 eat() {
+  //qaysidir sub-class ushbu metodni perezapisat qilmasligi uchun final qilish kerak bo`ladi
+  final public Eda1 eat() {
     System.out.println("Kushatet rabotnik");
     Eda1 e = new Eda1();
     return e;
   }
 
   // sub-class bu methoddan inheritance - meros olib bilmidi, private bo`lganligi uchun
-  static void sleep() {
+  final static void sleep() {
     System.out.println("Spit rabotnik");
   }
 }
 
 class Teacher2 extends Employee2 {
 
-  double salar = 200;
-  //Polymorphism faqat instance (non-static) metodlar uchun ishlaydi
-  static void sleep() {
-    System.out.println("Spit uchitel");
-  }
+// final medotlarni perezapisat qilish mumkin emas
+//  public Eda1 eat() {
+//    return new Eda1();
+//  }
 
-  public Frukti1 eat() {
-    System.out.println("Kushatet uchitel");
-    Frukti1 f = new Frukti1();
-    return f;
-  }
+  //agar super class final static bulsa, hiding qilish uchun ham perezapisat qilib bumidi
+//  static void sleep() {
+//    System.out.println("Spit uchitel");
+//  }
+
+  double salar = 200;
+
+//Polymorphism faqat instance (non-static) metodlar uchun ishlaydi
+//  static void sleep() {
+//    System.out.println("Spit uchitel");
+//  }
+
+//  public Frukti1 eat() {
+//    System.out.println("Kushatet uchitel");
+//    Frukti1 f = new Frukti1();
+//    return f;
+//  }
 
   int kolvoUchenikov;
 
