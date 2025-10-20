@@ -1,7 +1,5 @@
 package org.example.Lesson23;
 
-import org.example.Homework.Lesson_10.P1.P2.P3.C;
-
 public class Test7 {
 
   public static void main(String[] args) {
