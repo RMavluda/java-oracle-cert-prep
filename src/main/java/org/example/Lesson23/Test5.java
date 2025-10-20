@@ -2,6 +2,7 @@ package org.example.Lesson23;
 
 public class Test5 {
 
+  Test5(){}
   public static void main(String[] args) {
     Employee2 emp = new Employee2();
     Teacher2 t = new Teacher2();
@@ -17,7 +18,7 @@ public class Test5 {
 
 }
 
-public class Eda1 {
+class Eda1 {
 
 }
 
@@ -81,3 +82,8 @@ class Teacher2 extends Employee2 {
 //    t.sleep();
   }*/
 }
+
+/*
+final class T{}
+//final class larni perezapisat qilish yani me`ros olish mumkin emas
+class P extends T{}*/
