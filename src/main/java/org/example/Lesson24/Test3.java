@@ -2,6 +2,11 @@ package org.example.Lesson24;
 
 public class Test3 {
 
+  public static void main(String[] args) {
+    Help_able h = new Driver();
+    Swim_able s = new Driver();
+    Employee e = new Driver();
+  }
 }
 
 class Employee {
@@ -20,27 +25,6 @@ class Employee {
   }
 }
 
-// interface faqatgina abstract classlarni o`zida saqlagani uchun -->
-// interface dan implementatsiya olgan class ham abstract bo`lishi kerak.
-class Teacher extends Employee implements Help_able {
-
-  int kolichestvoUchenikov;
-
-  void uchit() {
-    System.out.println("Uchit");
-  }
-
-  //  qaysidir methodni overriding qilishda
-//  farzand sinfidagi metod ota sinfidagidan kamida shunchalik ochiq yoki undan ham ochiqroq bo`lishi mumkin
-//  bizdagi holat, ota class metodi default accesss modifier bo`lganligi uchun, undanda ochiqroq bo`lgan publicni yozganmiz
-  public void pomosh() {
-    System.out.println("Uchitel okazivayet pomosh");
-  }
-
-  public void tushitPojar() {
-    System.out.println("Uchitel tushit pojar");
-  }
-}
 
 // class hohlagancha interface ni implementatsiya qila oladi
 class Driver extends Employee implements Help_able, Swim_able {
@@ -57,7 +41,7 @@ class Driver extends Employee implements Help_able, Swim_able {
 //    a = 3;
   }
 
-  public void tushitPojar() {
+  public void tushitPojar(String s) {
     System.out.println("Voditel tushit pojar");
   }
 
@@ -67,13 +51,36 @@ class Driver extends Employee implements Help_able, Swim_able {
 
 }
 
+// interface faqatgina abstract classlarni o`zida saqlagani uchun -->
+// interface dan implementatsiya olgan class ham abstract bo`lishi kerak.
+class Teacher extends Employee implements Help_able {
+
+  int kolichestvoUchenikov;
+
+  void uchit() {
+    System.out.println("Uchit");
+  }
+
+  //  qaysidir methodni overriding qilishda
+//  farzand sinfidagi metod ota sinfidagidan kamida shunchalik ochiq yoki undan ham ochiqroq bo`lishi mumkin
+//  bizdagi holat, ota class metodi public accesss modifier bo`lganligi uchun, publicni yozganmiz
+//  chunki interface public dan boshqa access modifier qabul qilmidi
+  public void pomosh() {
+    System.out.println("Uchitel okazivayet pomosh");
+  }
+
+  public void tushitPojar(String s) {
+    System.out.println("Uchitel tushit pojar");
+  }
+}
+
 //INTERFACE O`ZIDA FAQAT ABSTRACT CLASSLARNI SAQLAY OLADI
 
 interface Help_able {
 
   void pomosh();
 
-  void tushitPojar();
+  void tushitPojar(String predmet);
 
 //  interface dagi 'int a' kabi qiymatlar compile run bo`lganida
 //  'public final static int a = 10' ga aylanadi
@@ -85,4 +92,19 @@ interface Help_able {
 interface Swim_able {
 
   void swim();
+}
+
+abstract class Y implements Swim_able {
+
+}
+
+abstract class Xx extends Y {
+
+}
+
+class Z extends Y {
+
+  public void swim() {
+
+  }
 }
