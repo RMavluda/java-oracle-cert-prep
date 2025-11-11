@@ -54,7 +54,7 @@ class Driver extends Employee implements Help_able, Swim_able {
   public void pomosh() {
     System.out.println("Voditel okazivayet pomosh");
     System.out.println(a);
-    a = 3;
+//    a = 3;
   }
 
   public void tushitPojar() {
