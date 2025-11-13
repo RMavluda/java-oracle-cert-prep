@@ -6,12 +6,20 @@ public class Test3 {
     Help_able h = new Driver();
     Swim_able s = new Driver();
     Employee e = new Driver();
+    System.out.println(h.a);
+//    System.out.println(h.salary);
+    h.pomosh();
+    h.tushitPojar("voda");
+//    h.eat();
+//    h.vodit();
+    s.swim();
+
   }
 }
 
 class Employee {
 
-  double slary = 100;
+  double salary = 100;
   String name = "Kolya";
   int age;
   int experience;
