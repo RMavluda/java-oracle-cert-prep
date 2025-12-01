@@ -36,13 +36,30 @@ interface I2 {
 //  void abc();
 }
 
-class R implements I1, I2{
+abstract class O {
+
+}
+
+class R extends O implements I1 {
+
+  static I2 method1(I2 i) {
+    return new D2();
+  }
+
+  O method2() {
+    return new R();
+  }
 
   public static void main(String[] args) {
-    I1.def();
-    I2.def();
+    I2 i = new D2();
+    method1(i);
   }
 }
+
+class D2 implements I2 {
+
+}
+
 //class Z2 implements I1 {
 //
 //  public void abc() {
