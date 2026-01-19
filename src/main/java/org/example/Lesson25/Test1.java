@@ -12,10 +12,20 @@ public class Test1 {
     Employee emp2 = new Driver();
     Employee emp3 = new Doctor();
     Employee [] arr = {emp1, emp2, emp3};
+    String s1 = null;
+    Object o = new Object();
 
-    for(Employee emp : arr){
-      emp.work();;
-    }
+/*    for(Employee emp : arr){
+      emp.work();
+    }*/
+
+    System.out.println(emp1 instanceof Employee);
+    System.out.println(emp1 instanceof Teacher);
+    System.out.println(emp1 instanceof Driver);
+    System.out.println(emp1 instanceof Help_able);
+//    System.out.println(emp1 instanceof Test1);
+    System.out.println(o instanceof Teacher);
+    System.out.println(emp1 instanceof Object);
 
 
 //    Help_able h = new Teacher();
