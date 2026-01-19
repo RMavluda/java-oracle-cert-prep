@@ -13,6 +13,10 @@ public class Test1 {
     Employee emp3 = new Doctor();
     Employee [] arr = {emp1, emp2, emp3};
 
+    for(Employee emp : arr){
+      emp.work();;
+    }
+
 
 //    Help_able h = new Teacher();
 //    h.help();
