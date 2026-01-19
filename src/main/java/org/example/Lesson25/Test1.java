@@ -8,10 +8,10 @@ public class Test1 {
 //    Employee[] array2 = {new Driver(), new Driver(), new Teacher(), new Doctor()};
 //    Help_able[] array3 = {new Driver(), new Driver(), new Teacher(), new Doctor()};
 
-    Employee emp1 = new Teacher();
-    Employee emp2 = new Driver();
-    Employee emp3 = new Doctor();
-    Employee [] arr = {emp1, emp2, emp3};
+    Employee3 emp1 = new Teacher();
+    Employee3 emp2 = new Driver();
+    Employee3 emp3 = new Doctor();
+    Employee3[] arr = {emp1, emp2, emp3};
     String s1 = null;
     Object o = new Object();
 
@@ -19,7 +19,7 @@ public class Test1 {
       emp.work();
     }*/
 
-    System.out.println(emp1 instanceof Employee);
+    System.out.println(emp1 instanceof Employee3);
     System.out.println(emp1 instanceof Teacher);
     System.out.println(emp1 instanceof Driver);
     System.out.println(emp1 instanceof Help_able);
@@ -48,7 +48,7 @@ abstract class Employee implements Help_able {
 
 }
 
-class Teacher extends Employee implements Help_able {
+class Teacher extends Employee3 implements Help_able {
 
   public void help() {
     System.out.println("Teacher helps");
@@ -59,7 +59,7 @@ class Teacher extends Employee implements Help_able {
   }
 }
 
-class Driver extends Employee implements Help_able {
+class Driver extends Employee3 implements Help_able {
 
   public void help() {
   }
@@ -69,7 +69,7 @@ class Driver extends Employee implements Help_able {
   }
 }
 
-class Doctor extends Employee implements Help_able {
+class Doctor extends Employee3 implements Help_able {
 
   public void help() {
   }
