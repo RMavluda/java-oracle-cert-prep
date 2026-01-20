@@ -3,14 +3,28 @@ package org.example.Lesson25;
 public class Test3 {
 
   public static void main(String[] args) {
-
-    Employee3 emp1 = new Doctor4();
+    Help_able1 h = new Doctor4();
+    Employee3 emp = new Doctor4();
     Employee3 emp2 = new Teacher3();
     Employee3 emp3 = new Driver();
-    Doctor4 d1 = (Doctor4)emp1;
+//    Doctor4 d1 = (Doctor4) emp1;
+    h.help();
 
-    System.out.println(d1.specializatsiya);
-    System.out.println(((Doctor4) emp1).specializatsiya);
+    ((Doctor)emp).help();
+
+
+
+
+
+
+
+//    System.out.println(((Doctor4) h).specializatsiya);
+//    ((Doctor4)h).lechit();
+
+//    Driver d = (Driver) emp2; // ClassCastException
+
+//    System.out.println(d1.specializatsiya);
+//    System.out.println(((Doctor4) emp1).specializatsiya);
 
 /**
  * "compile menga ishon emp1 tye i Doctor4" degan manoni bildiradi )))
@@ -20,14 +34,14 @@ public class Test3 {
  * kabi holatalr uchun ruhsat berilmidi.
  * chunki Test3 va Employee orasida hech qanday IS-A(implementatsiya) bog`liqligi bo`lishi mumkin emas
  */
-    d1.lechit();
+//    d1.lechit();
 
 /**
-* quyida "kompilyator menga ishon emp2 bu Doctor4" kabi holat
+ * quyida "kompilyator menga ishon emp2 bu Doctor4" kabi holat
  * !!! compile error paytida bu xatolik ko`rsatmidi, faqatgina run time vaqtidagina ClassCastException xatoligi bo`ladi
  *
  * compilyatorni aldash mumkin, ammo runTime ni aldab bo`lmidi )
-* */
+ * */
     ((Doctor4) emp2).lechit();
   }
 }
@@ -48,9 +62,13 @@ class Employee3 extends java.lang.Object { // auto extends olingan bo`ladi
   }
 }
 
-class Doctor4 extends Employee3 {
+class Doctor4 extends Employee3 implements Help_able1 {
 
   String specializatsiya = "xirurg";
+
+  public void help() {
+    System.out.println("Doctor okazivayet pomosh!");
+  }
 
   void lechit() {
     System.out.println("lechit");
@@ -71,3 +89,19 @@ class Dentist extends Doctor4 {
 
 }
 
+interface Help_able1 {
+
+  void help();
+}
+
+
+
+/*
+* Upcasting and Downcasting
+*
+* Employee = superclasss
+* Driver = subclass
+* Upcasting => Employee e = new Driver();
+* Downcasting => Driver d = (Driver) e;
+*
+* */
