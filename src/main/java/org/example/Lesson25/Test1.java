@@ -61,6 +61,8 @@ class Teacher extends Employee3 implements Help_able {
 
 class Driver extends Employee3 implements Help_able {
 
+  public boolean nazvaniyeMashini;
+
   public void help() {
   }
 
