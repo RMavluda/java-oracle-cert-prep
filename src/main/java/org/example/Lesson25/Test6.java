@@ -46,6 +46,8 @@ public class Test6 {
 //    int i = 2147483647;
 //    System.out.println(i + 1);
 
+//    NUMERIC PROMOTION
+
     int i = 5;
     long l = 10;
     System.out.println(i + 1); // avvaliga i long tipiga konvertatsiya bo`ladi va + 1 orqali long tipidagi javob ko`rsatialdi
