@@ -7,23 +7,24 @@ public class Test4 {
     void abc() throws FileNotFoundException {
         File f = new File("test8.txt");
         FileInputStream fis = new FileInputStream(f);
-        System.out.println("Have a good day");
-    }
-
-    void ghi() {
-        String s = null;
-        System.out.println(s.length());
     }
 
     void def() throws FileNotFoundException {
-        System.out.println("Hello");
-            abc();
+        abc();
     }
 
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         Test4 t = new Test4();
-        t.def();
+        try {
+            t.def();
+        } catch (FileNotFoundException e) {
+            IOException e1 = e;
+            System.out.println("Exception: " + e);
+//            System.out.println(e);
+//            System.out.println("Message: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }
 
