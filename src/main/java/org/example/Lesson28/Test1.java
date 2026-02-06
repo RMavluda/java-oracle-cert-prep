@@ -30,3 +30,19 @@ public class Test1 {
         System.out.println(abc());
     }
 }
+/* return int
+* output:
+Exception poyman
+peremennaya a v catch bloke 5
+eto block finally
+peremennaya a v finally bloke 10
+5
+*/
+
+/*return StringBuilder
+Exception poyman
+peremennaya a v catch bloke Hello
+eto block finally
+peremennaya a v finally bloke Hello???
+Hello???
+*/
