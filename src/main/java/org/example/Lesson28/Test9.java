@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Test9 {
 
+  static Doctor[] array = new Doctor[5];
+
   public static void main(String[] args) {
 //    ArrayList <String> list = new ArrayList<>();
 //    list.add("1");
@@ -19,8 +21,12 @@ public class Test9 {
 ////    Teacher teacher2 = (Teacher) array1[0];
 //    Doctor doctor1 = (Doctor)array2[0];
 //createPassword("qwertyuiopasdfghjklzxc");
+//    createPassword("qwd");
+//    list.add("!!!");
+//    System.out.println(array[0].toString());
+    Integer.parseInt("44ab", 16);
   }
-
+//LinkageError
   public static void createPassword(String pwd) {
     if (pwd.length() < 6) {
       throw new IllegalArgumentException("Password must be at least 6 characters");
