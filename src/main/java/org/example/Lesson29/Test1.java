@@ -14,8 +14,34 @@ public class Test1 {
      *bu korinishda yaratish mumkin emas, chunki LocalDate private constructorga ega
      * */
 
+
+    /*---Date---*/
     LocalDate ld = LocalDate.of(2025, 05, 15);
     System.out.println(ld);
+    LocalDate ld1 = LocalDate.of(2025, Month.MAY, 15);
+    System.out.println(ld1);
+    /*---Time---*/
+    LocalTime lt1 = LocalTime.of(12, 34);
+    System.out.println(lt1);
+    LocalTime lt2 = LocalTime.of(12, 34, 56);
+    System.out.println(lt2);
+    LocalTime lt3 = LocalTime.of(12, 34, 56, 999999999);
+    System.out.println(lt3);
+    /*---Date Time---*/
+    LocalDateTime ldt1 = LocalDateTime.of(2025,Month.AUGUST, 11, 12, 34);
+    System.out.println(ldt1);
+    LocalDateTime ldt2 = LocalDateTime.of(2025,Month.OCTOBER, 11, 12, 34, 56);
+    System.out.println(ldt2);
+    LocalDateTime ldt3 = LocalDateTime.of(2025,Month.MAY, 11, 12, 34, 56, 999999999 );
+    System.out.println(ldt3);
+
+    /*---LocalDate, LocalTime, LocalDateTime obyektlari immutable ---> ya`ni agar obyekt qiymati o`zgartirilsa bu yangi obyekt sifatida qabul qilinadi*/
+    LocalDateTime old = ldt3;
+    ldt3 = ldt3.plusDays(1);
+    System.out.println(ldt3);
+
+    System.out.println(ldt3.equals(old));
+    System.out.println(ldt3 == old);
   }
 
 }
