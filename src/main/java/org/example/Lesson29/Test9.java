@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class Test9 {
 
@@ -24,11 +25,26 @@ public class Test9 {
 //    yuqoridagi yozuv error qaytaradi, chunki time va date teng bololmidi
     DateTimeFormatter d3 = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
     System.out.println(ldt);
-    System.out.println(ldt.format(d3));
+    System.out.println(d3.format(ldt));
     System.out.println(ldt.format(d2));
     System.out.println(ldt.format(DateTimeFormatter.ISO_LOCAL_TIME));
 
     DateTimeFormatter d4 = DateTimeFormatter.ISO_WEEK_DATE;
-    System.out.println(ld.format(d4) + " ---> yilning nechanchi haftasi va ushbu haftaning nechanchi kuni ekanligi ko`rsatiladi");
+    System.out.println(ld.format(d4)
+        + " ---> yilning nechanchi haftasi va ushbu haftaning nechanchi kuni ekanligi ko`rsatiladi");
+
+    DateTimeFormatter shortFormat1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+    System.out.println(ld.format(shortFormat1));
+    System.out.println(ldt.format(shortFormat1));
+//    System.out.println(lt.format(shortFormat1));
+
+    DateTimeFormatter shortFormat2 = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+    System.out.println(ldt.format(shortFormat2));
+//    System.out.println(ld.format(shortFormat2));   ---> error
+//    System.out.println(lt.format(shortFormat2));   ---> error
+
+    DateTimeFormatter shortFormat3 = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);
+    System.out.println(ldt.format(shortFormat3));
+    System.out.println(shortFormat3.format(ldt));
   }
 }
