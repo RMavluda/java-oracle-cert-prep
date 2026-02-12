@@ -6,11 +6,14 @@ public class Test2 {
     Car c = Car.createCar();
   }
 }
-class Car{
-  private Car(){
+
+class Car {
+
+  private Car() {
 
   }
-  static Car createCar(){
+
+  static Car createCar() {
     return new Car();
   }
 }
