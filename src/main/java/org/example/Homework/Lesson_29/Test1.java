@@ -7,8 +7,8 @@ import java.time.format.DateTimeFormatter;
 
 public class Test1 {
 
-  static DateTimeFormatter f1 = DateTimeFormatter.ofPattern("yyyy, MMMM-dd !! hh:mm");
-  static DateTimeFormatter f2 = DateTimeFormatter.ofPattern("hh:mm, dd/MMM/yy");
+  static DateTimeFormatter f1 = DateTimeFormatter.ofPattern("yyyy, MMMM-dd !! hh:mm/a");
+  static DateTimeFormatter f2 = DateTimeFormatter.ofPattern("hh:mm/a, dd/MMM/yy");
 
   void shift(LocalDateTime ldt1, LocalDateTime ldt2, Period p, Duration d) {
 
